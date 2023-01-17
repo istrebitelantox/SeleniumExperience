@@ -1,9 +1,11 @@
 package Tust;
 
 import HelpInterfaces.IPerson;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class ModalDialogsTest extends BaseTest implements IPerson {
+    @DisplayName("Тест практической формы")
     @Test
     public void practiceFormTest() {
         practiceForm.openWindow();

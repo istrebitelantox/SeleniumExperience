@@ -1,10 +1,8 @@
 package HelpInterfaces;
 
-import Steps.PracticeForm;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public interface IAllClasses {
-    WebDriver driver = new ChromeDriver();
-    PracticeForm practiceForm =new PracticeForm(driver);
+    ChromeOptions options=new ChromeOptions();
+    //WebDriver driver=;
 }

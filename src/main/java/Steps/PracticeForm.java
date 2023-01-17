@@ -12,14 +12,14 @@ public class PracticeForm {
     }
     @Step
     public void openWindow(){
-        Calculating calculating=new Calculating(driver,"div.category-cards>div","Forms");
-        calculating.clickOnElement();
+        Calculating window=new Calculating(driver,"div.category-cards>div","Forms");
+        window.clickOnElement();
     }
     @Step
     public void openPracticeForm(){
-        Calculating calculating=new Calculating(driver,"ul.menu-list li","Practice Form");
+        Calculating practiceForm=new Calculating(driver,"ul.menu-list li","Practice Form");
         //WebElement element=driver.findElements(By.cssSelector("ul.menu-list li")).get(9);
-        calculating.clickOnElement();
+        practiceForm.clickOnElement();
     }
 
     @Step
@@ -31,6 +31,11 @@ public class PracticeForm {
     public void setLastName(String name){
         Input lastName=new Input(driver,"lastName");
         lastName.setText(name);
+    }
+    @Step
+    public void setEmail(String email){
+        Input eMail=new Input(driver,"userEmail");
+        eMail.setText(email);
     }
     @Step
     public void setGender(String gender){
